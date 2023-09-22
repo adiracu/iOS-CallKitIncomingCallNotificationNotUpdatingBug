@@ -11,7 +11,7 @@ import CallKit
 
 
 @main
-struct CallKitPlaygroundApp: App {
+struct CallKitIncomingCallNotificationNotUpdatingBugApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
@@ -75,16 +75,23 @@ class AppDelegate: NSObject, UIApplicationDelegate, CXProviderDelegate {
         }
     }
     
-    func triggerCallKitUpdate(text: Binding<String>, id: UUID, phoneNumber: String, value: String) {
-        print("triggering update")
-        text.wrappedValue = "Triggering update from \(value)"
+func triggerCallKitUpdate(text: Binding<String>, id: UUID, phoneNumber: String, value: String, counter: Int = 1) {
+        print("triggering update \(counter)")
+        text.wrappedValue = "Triggering update \(counter) from \(value)"
 
+    
         let update = CXCallUpdate()
         update.remoteHandle = CXHandle(type: .phoneNumber, value: phoneNumber)
         update.hasVideo = false
         update.localizedCallerName = value
 
         provider.reportCall(with: id, updated: update)
+    
+//        if counter < 3 {
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+//                self.triggerCallKitUpdate(text: text, id: id, phoneNumber: phoneNumber, value: value, counter: counter + 1)
+//            })
+//        }
     }
     
     func providerDidReset(_ provider: CXProvider) {

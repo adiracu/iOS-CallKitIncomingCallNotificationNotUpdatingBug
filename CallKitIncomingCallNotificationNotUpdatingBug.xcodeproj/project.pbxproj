@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4047561D2AB77F5F00986492 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4047561C2AB77F5F00986492 /* PushKit.framework */; };
 		4047561F2AB7830500986492 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4047561E2AB7830400986492 /* CallKit.framework */; };
-		40C83F642AB45DA6008E593A /* CallKitPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C83F632AB45DA6008E593A /* CallKitPlaygroundApp.swift */; };
+		40C83F642AB45DA6008E593A /* CallKitIncomingCallNotificationNotUpdatingBugApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C83F632AB45DA6008E593A /* CallKitIncomingCallNotificationNotUpdatingBugApp.swift */; };
 		40C83F662AB45DA6008E593A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C83F652AB45DA6008E593A /* ContentView.swift */; };
 		40C83F682AB45DA8008E593A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C83F672AB45DA8008E593A /* Assets.xcassets */; };
 		40C83F6B2AB45DA8008E593A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C83F6A2AB45DA8008E593A /* Preview Assets.xcassets */; };
@@ -20,8 +20,8 @@
 		4047561E2AB7830400986492 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
 		4087CB752ABC3C0E009EE6AE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4087CB762ABC3C16009EE6AE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		40C83F602AB45DA6008E593A /* CallKitPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallKitPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		40C83F632AB45DA6008E593A /* CallKitPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitPlaygroundApp.swift; sourceTree = "<group>"; };
+		40C83F602AB45DA6008E593A /* CallKitIncomingCallNotificationNotUpdatingBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallKitIncomingCallNotificationNotUpdatingBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C83F632AB45DA6008E593A /* CallKitIncomingCallNotificationNotUpdatingBugApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitIncomingCallNotificationNotUpdatingBugApp.swift; sourceTree = "<group>"; };
 		40C83F652AB45DA6008E593A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40C83F672AB45DA8008E593A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40C83F6A2AB45DA8008E593A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				4087CB762ABC3C16009EE6AE /* README.md */,
-				40C83F622AB45DA6008E593A /* CallKitPlayground */,
+				40C83F622AB45DA6008E593A /* CallKitIncomingCallNotificationNotUpdatingBug */,
 				40C83F612AB45DA6008E593A /* Products */,
 				4047561B2AB77F5F00986492 /* Frameworks */,
 			);
@@ -64,21 +64,21 @@
 		40C83F612AB45DA6008E593A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				40C83F602AB45DA6008E593A /* CallKitPlayground.app */,
+				40C83F602AB45DA6008E593A /* CallKitIncomingCallNotificationNotUpdatingBug.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		40C83F622AB45DA6008E593A /* CallKitPlayground */ = {
+		40C83F622AB45DA6008E593A /* CallKitIncomingCallNotificationNotUpdatingBug */ = {
 			isa = PBXGroup;
 			children = (
 				40C83F732AB462F0008E593A /* Info.plist */,
-				40C83F632AB45DA6008E593A /* CallKitPlaygroundApp.swift */,
+				40C83F632AB45DA6008E593A /* CallKitIncomingCallNotificationNotUpdatingBugApp.swift */,
 				40C83F652AB45DA6008E593A /* ContentView.swift */,
 				40C83F672AB45DA8008E593A /* Assets.xcassets */,
 				40C83F692AB45DA8008E593A /* Preview Content */,
 			);
-			path = CallKitPlayground;
+			path = CallKitIncomingCallNotificationNotUpdatingBug;
 			sourceTree = "<group>";
 		};
 		40C83F692AB45DA8008E593A /* Preview Content */ = {
@@ -92,9 +92,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		40C83F5F2AB45DA6008E593A /* CallKitPlayground */ = {
+		40C83F5F2AB45DA6008E593A /* CallKitIncomingCallNotificationNotUpdatingBug */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40C83F6E2AB45DA8008E593A /* Build configuration list for PBXNativeTarget "CallKitPlayground" */;
+			buildConfigurationList = 40C83F6E2AB45DA8008E593A /* Build configuration list for PBXNativeTarget "CallKitIncomingCallNotificationNotUpdatingBug" */;
 			buildPhases = (
 				40C83F5C2AB45DA6008E593A /* Sources */,
 				40C83F5D2AB45DA6008E593A /* Frameworks */,
@@ -104,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = CallKitPlayground;
+			name = CallKitIncomingCallNotificationNotUpdatingBug;
 			productName = CallKitNotificationNotUpdating;
-			productReference = 40C83F602AB45DA6008E593A /* CallKitPlayground.app */;
+			productReference = 40C83F602AB45DA6008E593A /* CallKitIncomingCallNotificationNotUpdatingBug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 40C83F5B2AB45DA6008E593A /* Build configuration list for PBXProject "CallKitPlayground" */;
+			buildConfigurationList = 40C83F5B2AB45DA6008E593A /* Build configuration list for PBXProject "CallKitIncomingCallNotificationNotUpdatingBug" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				40C83F5F2AB45DA6008E593A /* CallKitPlayground */,
+				40C83F5F2AB45DA6008E593A /* CallKitIncomingCallNotificationNotUpdatingBug */,
 			);
 		};
 /* End PBXProject section */
@@ -160,7 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40C83F662AB45DA6008E593A /* ContentView.swift in Sources */,
-				40C83F642AB45DA6008E593A /* CallKitPlaygroundApp.swift in Sources */,
+				40C83F642AB45DA6008E593A /* CallKitIncomingCallNotificationNotUpdatingBugApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,11 +288,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CallKitPlayground/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CallKitIncomingCallNotificationNotUpdatingBug/Preview Content\"";
 				DEVELOPMENT_TEAM = 7A7TG3872W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CallKitPlayground/Info.plist;
+				INFOPLIST_FILE = CallKitIncomingCallNotificationNotUpdatingBug/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.noname.CallKitPlayground;
+				PRODUCT_BUNDLE_IDENTIFIER = org.noname.CallKitIncomingCallNotificationNotUpdatingBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -319,11 +319,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CallKitPlayground/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CallKitIncomingCallNotificationNotUpdatingBug/Preview Content\"";
 				DEVELOPMENT_TEAM = 7A7TG3872W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CallKitPlayground/Info.plist;
+				INFOPLIST_FILE = CallKitIncomingCallNotificationNotUpdatingBug/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -335,7 +335,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.noname.CallKitPlayground;
+				PRODUCT_BUNDLE_IDENTIFIER = org.noname.CallKitIncomingCallNotificationNotUpdatingBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -346,7 +346,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		40C83F5B2AB45DA6008E593A /* Build configuration list for PBXProject "CallKitPlayground" */ = {
+		40C83F5B2AB45DA6008E593A /* Build configuration list for PBXProject "CallKitIncomingCallNotificationNotUpdatingBug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40C83F6C2AB45DA8008E593A /* Debug */,
@@ -355,7 +355,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40C83F6E2AB45DA8008E593A /* Build configuration list for PBXNativeTarget "CallKitPlayground" */ = {
+		40C83F6E2AB45DA8008E593A /* Build configuration list for PBXNativeTarget "CallKitIncomingCallNotificationNotUpdatingBug" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40C83F6F2AB45DA8008E593A /* Debug */,

@@ -13,7 +13,16 @@ Steps to reproduce:
 The iPhone 12 updates the notification from "Calling" to "Johnny Doe".
 The iPhone 14 does not update the notification, it's always shown as "Calling".
 
+1. If the app running in the foreground, screen on -> bug present
+2. If the app running in the foreground, screen locked -> no bug
+3. If the app is running & backgrounded, screen on ->  bug present
+4. If the app is running & backgrounded, screen locked ->  no bug
+5. If the app is killed, screen on -> bug present
+6. If the app is killed, screen locked ->  no bug
 
+Looks to be a "screen on/locked" bug only, with app foreground state not having an effect.
+
+All the above on iPhone 14 Pro. On iPhone 12 Pro all cases work as expected.
 
 
 
