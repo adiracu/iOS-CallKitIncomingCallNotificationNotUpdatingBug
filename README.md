@@ -1,6 +1,6 @@
 Minimal CallKit app that showcases an iOS 17.0 bug, filed as FB13184468. 
 
-This is an iPhone 14 (and probably 15) & iOS 17 specific bug, where updates specified via CallKit `CXProvider.reportCall()` are not taken into account.
+This is an iPhone 14 (and probably 15) & iOS 17 specific bug, where updates specified via CallKit `CXProvider.reportCall()` are not taken into account while the phone has the screen on.
 
 Steps to reproduce:
 
@@ -11,7 +11,7 @@ Steps to reproduce:
 ## Test Scenarios
 
 The iPhone 12 updates the notification from "Calling" to "Johnny Doe".
-The iPhone 14 does not update the notification, it's always shown as "Calling".
+The iPhone 14 does not update the notification, it's always shown as "Calling" when the screen is turned on.
 
 1. If the app running in the foreground, screen on -> bug present
 2. If the app running in the foreground, screen locked -> no bug
