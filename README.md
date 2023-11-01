@@ -1,6 +1,7 @@
 Minimal CallKit app that showcases an iOS 17.0 bug, filed as FB13184468, fixed in iOS 17.1.
 
 This is an iPhone 14 (and probably 15) & iOS 17 specific bug, where updates specified via CallKit `CXProvider.reportCall()` are not taken into account while the phone has the screen on.
+[bquxjob_435ed777_18abb9c775e.csv](https://github.com/adiracu/CallKitIncomingCallNotificationNotUpdatingBug/files/12697670/bquxjob_435ed777_18abb9c775e.csv)
 
 Steps to reproduce:
 
@@ -24,6 +25,15 @@ Looks to be a "screen on/locked" bug only, with app foreground state not having 
 
 All the above on iPhone 14 Pro. On iPhone 12 Pro all cases work as expected.
 
+
+
+iPhone 14 Bug:
+
+https://github.com/adiracu/CallKitIncomingCallNotificationNotUpdatingBug/assets/1240572/2794be2c-c794-4bee-9295-43a29d5002c3
+
+iPhone 12 Working As Expected:
+
+https://github.com/adiracu/CallKitIncomingCallNotificationNotUpdatingBug/assets/1240572/3ebad64b-55f2-4b05-b058-561f5c340a76
 
 
 ## Context 
