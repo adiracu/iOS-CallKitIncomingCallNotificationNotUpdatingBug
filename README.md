@@ -1,4 +1,4 @@
-Minimal CallKit app that showcases an iOS 17.0 bug, filed as FB13184468. 
+Minimal CallKit app that showcases an iOS 17.0 bug, filed as FB13184468, fixed in iOS 17.1.
 
 This is an iPhone 14 (and probably 15) & iOS 17 specific bug, where updates specified via CallKit `CXProvider.reportCall()` are not taken into account while the phone has the screen on.
 
